@@ -3,6 +3,11 @@
  * remove this comment and start adding your styles to this file.
  */
 
+ img {
+width: 100%;
+height: auto;
+
+ }
 
 #navbar  {
 
@@ -87,7 +92,7 @@ display: none;
 float: left;
 display: block;
 vertical-align: none;
-margin-right: 30px;
+margin-right: 0px;
 
 }
 
@@ -95,18 +100,102 @@ margin-right: 30px;
 .views-content-title{
 
 	display: block;
-	float: left;
-	width: 100px;
+	float: bottom;
+	width: 80%;
+	/*border :1px solid black;*/
 }
+
+.views-field-title
+{
+width: 19%;
+
+}
+
+
+#views_slideshow_cycle_main_imagenes-block
+{
+
+	width: 100%;
+}
+
+
+
+#views_slideshow_pager_field_item_bottom_imagenes-block_0,#views_slideshow_pager_field_item_bottom_imagenes-block_1,  #views_slideshow_pager_field_item_bottom_imagenes-block_2,#views_slideshow_pager_field_item_bottom_imagenes-block_3,#views_slideshow_pager_field_item_bottom_imagenes-block_4
+{
+
+width: 19%;
+
+float: left;
+height: auto;
+
+}
+
+.views-slideshow-controls-bottom {
+padding-top: 10px;
+
+
+}
+
+.views-content-field-miniatura img:hover{
+	background: red;
+	cursor: pointer;
+}
+
+.views-content-field-miniatura:hover{
+	background: red;
+	cursor: pointer;
+}
+
+.views-content-field-miniatura{
+	background: red;
+	cursor: pointer;
+}
+
+#views_slideshow_pager_field_item_bottom_imagenes-block_0 img:hover {
+
+	background-color: red;
+}
+
 
 
 .footer
 {
 	width: 100%;
-	max-width: 100%;
-	min-width: 100%;
-	background-color: rgb(0,0,0);
+	/*max-width: 100%;
+	min-width: 100%;*/
+	background-color: #333;
+	color:#999;
+	height: 280px;
+
+
 }
+
+
+.footer p{
+
+padding: 40px 0;
+/*margin: 0px 310px;*/
+font-size: 11px; 
+text-decoration: none;
+overflow: hidden;
+width: 100%;
+height: auto;
+
+
+}  
+
+
+ 
+.footer img {
+
+	width: 100px;
+	height: 31px;
+}
+
+.footer p a{
+color: #ccc;
+
+} 
 #block-views-primera-columna-block ul .views-row {
 	list-style-type: none;
 }
@@ -141,4 +230,111 @@ margin-right: 30px;
 }
 
 
+#block-views-publicidad-block ,  #block-views-publicidad-block-1{
 
+width: 1000px;
+margin-left: 50px;
+margin-top: 30px;
+}
+
+#block-views-imagenes-block
+{
+margin-left: 50px;
+
+} 
+
+
+#bottom-links-wrap ul li{
+list-style: none;
+float: left;
+margin-right: 180px;
+margin-left: 0px;
+
+
+}
+
+#bottom-links-wrap{
+/*margin-left: 310px;*/
+
+}
+
+
+#bottom-links-wrap ul li a
+{
+text-decoration: none;
+color: #ccc;
+padding: 5px 0;
+
+}
+
+#bottom-links-wrap ul {
+margin: 12px 0 0;
+display: table;
+table-layout: fixed;
+
+height: 24px;
+border-top: 1px solid #666;
+border-bottom: 1px solid #666;
+padding-left: 0;
+
+/*border-top: 1px solid #ccc;
+border-bottom: 1px  solid #ccc;*/
+
+}
+
+
+
+ #page-header
+ {
+
+ 	width: 100%;
+ }
+
+
+
+/*-------------------------------------------------------------------------*/
+.pane-primera-columna ul .views-row {
+	list-style-type: none;
+}
+.pane-primera-columna ul li.views-row {
+	width:30% ;
+	margin:4px;
+	max-width: 30%;
+	min-width: 30%;
+	display:block;
+	float:left;
+	/*overflow:hidden;*/
+	border:1px solid;
+	height: 700px;
+
+}
+
+
+.pane-segunda-columna ul .views-row {
+	list-style-type: none;
+}
+.pane-segunda-columna  ul li.views-row ,#block-views-segunda-columna-block-1 ul li.views-row{
+	width:30% ;
+	margin:4px;
+	max-width: 30%;
+	min-width: 30%;
+	display:block;
+	float:left;
+	/*overflow:hidden;*/
+	border:1px solid;
+	height: 350px;
+
+}
+
+
+.pane-publicidad{
+width: 1000px;
+margin-left: 50px;
+margin-top: 30px;
+
+}
+
+
+.views-field-title{
+width: 100%;
+}
