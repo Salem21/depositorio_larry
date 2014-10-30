@@ -86,15 +86,20 @@ display: none;
 
 }
 
-.views-content-field-miniatura
+.views-content-field-img
 {
 
 float: left;
 display: block;
 vertical-align: none;
 margin-right: 0px;
+width: 80%;
+
 
 }
+
+
+
 
 
 .views-content-title{
@@ -103,14 +108,28 @@ margin-right: 0px;
 	float: bottom;
 	width: 80%;
 	/*border :1px solid black;*/
+	color: black;
 }
 
-.views-field-title
+.views-field-title view
 {
 width: 19%;
 
 }
 
+
+.views-slideshow-cycle-main-frame-row-item views-row views-row-1 views-row-even .views-field-title
+{
+display: none;
+color: red;
+
+}
+
+.views-slideshow-cycle-main-frame-row-item .views-field-title
+{
+
+	display: none;
+}
 
 #views_slideshow_cycle_main_imagenes-block
 {
@@ -211,6 +230,14 @@ color: #ccc;
 	height: 700px;
 
 }
+#block-views-primera-columna-block .views-field-body
+{
+width: 80%;
+
+}
+
+
+
 
 
 #block-views-segunda-columna-block ul .views-row {
@@ -309,6 +336,12 @@ border-bottom: 1px  solid #ccc;*/
 
 }
 
+.pane-primera-columna ul li.views-row  .views-field-field-img img:hover{
+
+	opacity:.75;
+	background-color: red;
+}
+
 
 .pane-segunda-columna ul .views-row {
 	list-style-type: none;
@@ -338,3 +371,99 @@ margin-top: 30px;
 .views-field-title{
 width: 100%;
 }
+
+#block-views-articulo-columna-block img
+{
+width: 117px;
+height: 165px;
+/*float: right;*/
+}
+
+#block-views-articulo-columna-block ul
+
+{
+
+list-style: none;
+
+}
+
+#block-views-articulo-columna-block li
+{
+display: block;
+clear: both;
+margin: 10px;
+
+}
+
+#block-views-articulo-columna-block p
+{
+width: 90%;
+font-size: 8px;
+margin-right: 0px;
+
+}
+
+#block-views-articulo-columna-block li .views-field-body , #block-views-articulo-columna-block li .views-field-field-fecha-de-publicacion
+{
+	clear: both;
+width: 40%;
+float: left;
+height: 90%;
+font-size: 11px;
+
+}
+
+#block-views-articulo-columna-block li .views-field-title
+{
+	clear: both;
+width: 40%;
+float: left;
+
+
+}
+#block-views-articulo-columna-block .view-field-image
+{
+float: top;
+
+}
+
+
+
+./*views-field views-field-body{
+
+width: 50%;
+margin-right: 0px;
+
+}*/
+
+
+ .views-field-sharethis  .sharethis-wrapper{
+
+	float:right;
+	background-color: red;
+	border: 1px solid black;
+
+	
+}
+
+
+#block-views-relacionados-block 
+{
+
+float: left;
+width: 90%;
+margin-top: 10%;
+}
+ #block-views-relacionados-block .views-row-1,  #block-views-relacionados-block .views-row-2, #block-views-relacionados-block .views-row-3, #block-views-relacionados-block .views-row-4{
+
+ 	float: left;
+ 	display: block;
+ 	width: 25%;
+ 	padding: 0 10px;
+ }
+
+ #block-block-2{
+ 	padding-top: 30px;
+ 	font-size: 24px;
+ 	text-align: center;
+ }
