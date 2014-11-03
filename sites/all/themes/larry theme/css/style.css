@@ -23,7 +23,8 @@ min-width: 100%;
 
 height: 70px;
 display: block;
-margin-left: 100px;
+margin-left: 85%;
+/*position: absolute;*/
 
 
 }
@@ -45,7 +46,7 @@ color: white;
 float: left;
 	width: 180px;
 	height: 30px;
-	margin-left: 300px;
+	margin-left: 20px;
 }
 
 #block-user-login input[type=password]
@@ -591,3 +592,22 @@ color: black;
 
  	background-color: pink;
  }
+
+
+/*h2.block-title{
+
+	float:left;
+	display: block;
+	width: 15%;
+}*/
+
+#block-user-login h2.block-title{
+
+	float:left;
+	display: block;
+	width: 20%;
+	margin-left: 13%;
+	color: #0099cc;
+	/*position: relative;*/
+	text-transform: uppercase;
+}
