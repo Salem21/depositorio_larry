@@ -395,11 +395,19 @@ border-bottom: 1px  solid #ccc;*/
 
 }
 
-.pane-primera-columna ul li.views-row  .views-field-field-img img:hover{
+.pane-primera-columna ul li.views-row  .views-field-field-img img:hover {
 
 	opacity:.75;
 	background-color: red;
 }
+
+.pane-primera-columna ul li.views-row  .views-field-title
+{
+border-left:4px solid #cc3333;
+padding-left: 10px;
+
+}
+
 
 
 
@@ -424,6 +432,15 @@ border-bottom: 1px  solid #ccc;*/
 	opacity:.75;
 
 }
+
+
+.pane-segunda-columna ul li.views-row  .views-field-title
+{
+border-left:4px solid #cc3333;
+padding-left: 10px;
+
+}
+
 
 
 .pane-publicidad{
@@ -546,4 +563,31 @@ margin-bottom: 10px;
  #edit-submit--2{
 
  	display: none;
+ }
+
+
+ #block-system-main-menu{
+
+ 	float: right;
+ }
+
+ #block-system-main-menu a{
+text-decoration: none;
+color:white;
+
+ }
+
+ #block-system-main-menu a:hover{
+color: black;
+
+ }
+
+ 
+ h1.page-header{
+
+ 	display: none;
+ }
+ .active-trail .active{
+
+ 	background-color: pink;
  }
