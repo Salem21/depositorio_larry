@@ -1,0 +1,4 @@
+name = extenso
+description = "Módulo que obtiene articulo mas extenso"
+package = querys personalizados
+core = 7.x
