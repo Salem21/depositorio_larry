@@ -26,23 +26,29 @@ function extenso_cual_es(){
 	  //Calcula el ahora.
 	  $fecha_fin = time();
 	  //Utilizamos el API para obtener los posts
-	   $arguments = array(':body' => 'max(body_value)');
-	$query = db_select('node', 'n')
+	   $arguments = array(':body' => 'max(body)');
+	/*$query = db_select('node', 'n')
 	    ->fields('n', array('nid', 'title', 'created','type'))
 	    ->condition('status', 1) //Solo los publicados
 	    ->condition('type', 'articulo')
-	   // ->where('body',$arguments)
+
+	     ->condition('type', 'articulo')
+	    //>where('body max',$arguments)
 	    
-	    ->execute();
+	    ->execute();*/
+	    $type='articulo';
+	    $result = db_query('SELECT    n.nid, n.title, n.created, n.type
+FROM node n  INNER JOIN field_data_body b on b.entity_id=n.nid WHERE n.type =:type and b.body_value=(select max(body_value) from field_data_body)  ', array(':type' => $type));
 
 
 	   /* $query = db_select('node', 'n')
 	    ->fields('n', array('nid', 'title', 'created'))
-	    ->condition('status', 1) //Solo los publicados
+	    ->condition('status', 1) //Solo los pu
+	    blicados
 	    ->condition('created', array($fecha_inicio, $fecha_fin), 'BETWEEN')
 	    ->orderBy('created', 'DESC') //Mas recientes primero
 	    ->execute();*/
-	  return $query;
+	  return $result;
 }
 
 
