@@ -52,6 +52,15 @@ FROM node n  INNER JOIN field_data_body b on b.entity_id=n.nid WHERE n.type =:ty
 }
 
 
+function extenso_theme() {
+  return array(
+    'extenso-block-view' => array(
+     // 'block' => array(),
+      'template' => 'extenso-block-view',
+    ),
+  );
+}
+
 
 function extenso_block_view($delta = ''){
 	switch ($delta){
@@ -68,10 +77,16 @@ function extenso_block_view($delta = ''){
 					if (empty($items)){
 						$block['content'] = 'No content Avaliable';
 					} else {
-						$block['content'] = theme('item_list', array('items' => $items));
+						$block['content'] = theme('extenso-block-view', array('items' => $items));
 					
 					}
-			return $block;
+
+
+					/*$variables = array(
+				    'block' => $block['content'],
+				  );*/
+					return $block;
+			//return theme ('extenso_block_view',$variables);
 			break;
 	}
 }
