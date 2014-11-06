@@ -170,12 +170,22 @@ color: red;
 }
 
 
+#views_slideshow_pager_field_item_bottom_imagenes-block_0  .views-content-field-img, #views_slideshow_pager_field_item_bottom_imagenes-block_1  .views-content-field-img, #views_slideshow_pager_field_item_bottom_imagenes-block_2  .views-content-field-img, #views_slideshow_pager_field_item_bottom_imagenes-block_3  .views-content-field-img , #views_slideshow_pager_field_item_bottom_imagenes-block_4  .views-content-field-img
+{
+float: left;
+display: block;
+vertical-align: none;
+margin-right: 0px;
+width: 80%;
+
+}
+
 
 #views_slideshow_pager_field_item_bottom_imagenes-block_0,#views_slideshow_pager_field_item_bottom_imagenes-block_1,  #views_slideshow_pager_field_item_bottom_imagenes-block_2,#views_slideshow_pager_field_item_bottom_imagenes-block_3,#views_slideshow_pager_field_item_bottom_imagenes-block_4
 {
 
 width: 19%;
-
+/*margin-left: 1%;*/
 float: left;
 height: auto;
 
