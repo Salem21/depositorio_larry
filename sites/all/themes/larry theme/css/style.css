@@ -137,7 +137,7 @@ width: 80%;
 .views-content-title{
 
 	display: block;
-	float: bottom;
+
 	width: 80%;
 	/*border :1px solid black;*/
 	color: black;
@@ -170,7 +170,8 @@ color: red;
 }
 
 
-#views_slideshow_pager_field_item_bottom_imagenes-block_0  .views-content-field-img, #views_slideshow_pager_field_item_bottom_imagenes-block_1  .views-content-field-img, #views_slideshow_pager_field_item_bottom_imagenes-block_2  .views-content-field-img, #views_slideshow_pager_field_item_bottom_imagenes-block_3  .views-content-field-img , #views_slideshow_pager_field_item_bottom_imagenes-block_4  .views-content-field-img
+#views_slideshow_pager_field_item_bottom_imagenes-block_0  .views-content-field-img, #views_slideshow_pager_field_item_bottom_imagenes-block_1  .views-content-field-img, #views_slideshow_pager_field_item_bottom_imagenes-block_2  .views-content-field-img, #views_slideshow_pager_field_item_bottom_imagenes-block_3  .views-content-field-img , #views_slideshow_pager_field_item_bottom_imagenes-block_4
+  .views-content-field-img
 {
 float: left;
 display: block;
@@ -220,12 +221,8 @@ padding-top: 10px;
 }
 
 
-/*#views_slideshow_pager_field_item_bottom_imagenes-block_0 .views-content-field-img{
-z-index: 1;
-background-image: url("showibiz.png") ;
- background-position: 10px;
 
-}*/
+
 #widget_pager_bottom_imagenes-block .views-slideshow-pager-field-item{
 	display:block;
 }
@@ -450,6 +447,8 @@ border-left:4px solid #cc3333;
 padding-left: 10px;
 
 }
+
+
 
 .pane-primera-columna ul li.views-row  .views-field-title h4 a
 {
@@ -679,15 +678,15 @@ color: black;
 {
 
 	text-decoration: none;
-	color:grey;
+	color:red;
 	font-size: 20px;
 	
 }
 
 #mas_grande em a:hover{
 	-webkit-animation-name:animacion;
-            -webkit-animation-duration: 0.2s;
-            -webkit-animation-iteration-count:2 ;
+            -webkit-animation-duration: 1s;
+            -webkit-animation-iteration-count:infinite ;
 
 
 
@@ -715,13 +714,13 @@ color: black;
 
 
  @-webkit-keyframes animacion{
-            from {
-               font-size:  20px;
-               color:grey;
-            }
-            to {
-               font-size: 25px;
-               color:red;
-              
-            }
+              0%{transform:scale(1)}
+			   50%{-webkit-transform:scale(1)}
+			   60%{-webkit-transform:scale(0.8)}
+			   70%{-webkit-transform:scale(1.2)}
+			   80%{-webkit-transform:scale(0.8)}
+			    90%{-webkit-transform:scale(1.2)}
+			   54%{-webkit-transform:scale(1)}
+            
+            
         }

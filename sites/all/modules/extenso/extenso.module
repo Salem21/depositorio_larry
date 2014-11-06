@@ -41,6 +41,7 @@ function extenso_cual_es(){
 FROM node n  INNER JOIN field_data_body b on b.entity_id=n.nid WHERE n.type =:type and b.body_value=(select max(body_value) from field_data_body)  ', array(':type' => $type));
 
 
+
 	   /* $query = db_select('node', 'n')
 	    ->fields('n', array('nid', 'title', 'created'))
 	    ->condition('status', 1) //Solo los pu
